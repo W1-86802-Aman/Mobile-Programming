@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:padding="12dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+   <TextView
+       android:id="@+id/textName"
+       android:textSize="20dp"
+       android:text="Name"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"/>
+    <TextView
+        android:id="@+id/texRollno"
+        android:textSize="20dp"
+        android:text="Rollno"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:layout_marginTop="5dp"
+        android:background="@android:color/darker_gray"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+</LinearLayout>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:padding="16dp"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".StudentAddActivity">
+    <TextView
+        android:gravity="center"
+        android:textStyle="bold"
+        android:text="Add student"
+        android:textSize="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <EditText
+        android:inputType="number"
+        android:id="@+id/editRollno"
+        android:layout_marginTop="10dp"
+        android:hint="Enter Rollno"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <EditText
+        android:id="@+id/editName"
+        android:layout_marginTop="10dp"
+        android:hint="Enter Name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <EditText
+        android:id="@+id/editCourse"
+        android:layout_marginTop="10dp"
+        android:hint="Enter course"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <EditText
+        android:inputType="number"
+        android:id="@+id/editMarks"
+        android:layout_marginTop="10dp"
+        android:hint="Enter Marks"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <LinearLayout
+        android:layout_marginTop="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:backgroundTint="#74A838"
+            android:layout_weight="0.5"
+            android:onClick="save"
+            android:text="save"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:ignore="OnClick" />
+
+        <Button
+            android:backgroundTint="#ED2A1B"
+            android:layout_weight="0.5"
+            android:onClick="cancel"
+            android:text="cancel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:ignore="OnClick" />
+    </LinearLayout>
+
+</LinearLayout>
