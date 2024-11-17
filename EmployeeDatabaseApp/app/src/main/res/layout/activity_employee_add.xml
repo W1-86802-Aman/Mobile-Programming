@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:layout_height="match_parent"
+    tools:context=".EmployeeAddActivity">
+
+    <TextView
+        android:layout_margin="10dp"
+        android:text="Add students"
+        android:textSize="20dp"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <EditText
+        android:layout_marginTop="5dp"
+        android:id="@+id/editId"
+        android:hint="Enter id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        android:layout_marginTop="5dp"
+        android:id="@+id/editName"
+        android:hint="Enter name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        android:layout_marginTop="5dp"
+        android:id="@+id/editMarks"
+        android:hint="Enter marks"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:padding="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:layout_weight="0.5"
+            android:onClick="save"
+            android:text="save"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:ignore="OnClick" />
+
+        <Button
+            android:layout_weight="0.5"
+            android:onClick="cancel"
+            android:text="cancel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:ignore="OnClick" />
+
+    </LinearLayout>
+
+</LinearLayout>

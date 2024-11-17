@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".activities.StudentEditActivity">
+
+    <TextView
+        android:gravity="center"
+        android:text="Edit Student"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:id="textId"
+        android:text="Id:"
+        android:textSize="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        android:id="@+id/editName"
+        android:hint="enter name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <EditText
+        android:id="@+id/editCourse"
+        android:hint="enter course"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <EditText
+        android:id="@+id/editMarks"
+        android:hint="enter marks"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:layout_marginTop="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:layout_weight="0.5"
+            android:text="save"
+            android:onClick="save"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:ignore="OnClick" />
+        <Button
+            android:layout_weight="0.5"
+            android:text="cancel"
+            android:onClick="cancel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:ignore="OnClick" />
+    </LinearLayout>
+</LinearLayout>
